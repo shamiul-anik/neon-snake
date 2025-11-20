@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+:root {
+  --bg-color: #05070a;
+  --grid-line: #161b22;
+  --snake-head: #00ff9d;
+  --snake-body: #00cc7a;
+  --food-color: #ff0055;
+  --text-color: #e6edf3;
+  --accent-color: #58a6ff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Press Start 2P", monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  touch-action: none;
+}
+
+h1 {
+  font-size: 1.2rem; /* Smaller title to save space */
+  margin: 10px 0;
+  text-shadow: 0 0 15px var(--accent-color);
+  letter-spacing: 2px;
+  z-index: 5;
+}
+
+#game-container {
+  position: relative;
+  box-shadow: 0 0 40px rgba(0, 255, 157, 0.15);
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  background-color: #000;
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+  /* Canvas size is handled by JS */
+}
+
+.ui-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(5, 7, 10, 0.8);
+  backdrop-filter: blur(4px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  border-radius: 12px;
+  transition: opacity 0.3s;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+button {
+  background: linear-gradient(135deg, var(--snake-head), #00b36b);
+  color: #000;
+  border: none;
+  padding: 15px 40px;
+  font-family: "Press Start 2P", monospace;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-top: 25px;
+  box-shadow: 0 0 20px var(--snake-head);
+  text-transform: uppercase;
+  transition: all 0.1s;
+}
+
+button:active {
+  transform: scale(0.96);
+  box-shadow: 0 0 10px var(--snake-head);
+}
+
+#score-board {
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  display: flex;
+  gap: 30px;
+  z-index: 5;
+}
+
+#score-val,
+#high-score-val {
+  color: var(--snake-head);
+  text-shadow: 0 0 10px var(--snake-head);
+}
+
+.controls-hint {
+  margin-top: 20px;
+  font-size: 0.7rem;
+  color: #8b949e;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
