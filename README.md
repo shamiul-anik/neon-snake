@@ -2,7 +2,7 @@
 
 A high-performance, neon-styled modernization of the classic Snake arcade game.
 
-Neon Snake Ultra is a single-file web game built with vanilla JavaScript. It upgrades the classic mechanics with a custom rendering engine that uses linear interpolation for smooth movement, particle effects, and a responsive layout that adapts to any device size.
+Neon Snake Ultra is a simple web game built with vanilla JavaScript. It upgrades the classic mechanics with a custom rendering engine that uses linear interpolation for smooth movement, particle effects, and a responsive layout that adapts to any device size.
 
 ## 🎮 Features
 
@@ -26,11 +26,12 @@ Neon Snake Ultra is a single-file web game built with vanilla JavaScript. It upg
 
 ## 🚀 Quick Start
 
-This project is designed as a Single File Application. There are no build steps, npm installs, or servers required.
+There are no build steps, npm installs, or servers required.
 
-1. Download the snake_game.html file.
-2. Open it in any modern web browser (Chrome, Firefox, Safari, Edge).
-3. Play!
+1. Download the `index.html`, `styles.css`, and `scripts.js` files.
+2. Place them in the same directory.
+3. Open `index.html` in any modern web browser (Chrome, Firefox, Safari, Edge).
+4. Play!
 
 ## 🛠️ Tech Stack
 
