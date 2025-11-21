@@ -1,4 +1,4 @@
-# Neon Snake Ultra 🐍✨
+# Neon Snake Ultra ✨
 
 A high-performance, neon-styled modernization of the classic Snake arcade game.
 
